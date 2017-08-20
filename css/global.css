@@ -1,0 +1,94 @@
+body, html {
+	margin:0;
+	font:1em "Open Sans", sans-serif;
+}
+
+.content {
+	padding:30px;
+}
+
+.nav-main {
+	width:100%;
+	background-color:#222;
+	height:60px;
+	color:#fff;
+}
+
+.nav-main .logo {
+	float:left;
+	height:40px;
+	padding:10px 30px;
+	font-size:1.4em;
+	line-height:40px;
+}
+
+.nav-main > ul {
+    margin:0;
+    padding:0;
+    float:left;
+    list-style-type:none;
+}
+
+.nav-main > ul > li {
+    float:left;
+}
+
+.nav-item {
+    display:inline-block;
+    height:40px;
+    padding:12px 20px;
+    line-height:40px;
+    color:#fff;
+    text-decoration:none; 
+}
+
+.nav-item:hover {
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    transition: 0.2s linear;
+    background-color:#444;
+}
+
+.nav-content {
+    max-height: 0;
+    position:absolute;
+    top:60px;
+    overflow: hidden;
+    background-color: #222
+}
+
+.nav-content a {
+    color:#fff;
+    font-size: .80em;
+    text-decoration: none;
+}
+
+.nav-content a:hover{
+    text-decoration: underline; 
+}
+
+.nav-sub {
+    padding:20px;
+}
+
+.nav-sub ul {
+    padding:0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.nav-sub ul li a {
+    display: inline-block;
+    padding: 5px 0;
+}
+
+.nav-item:focus {
+    background-color: #444;
+}
+
+.nav-item:focus ~ .nav-content {
+    max-height: 400px;
+    -webkit-transition:max-height 0.3s ease-in;
+    -moz-transition:max-height 0.3s ease-in;
+    transition:max-height 0.3s ease-in;
+}
