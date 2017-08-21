@@ -1,6 +1,7 @@
 body, html {
 	margin:0;
 	font:1em "Open Sans", sans-serif;
+    background-color: tomato;
 }
 
 .content {
@@ -12,7 +13,7 @@ body, html {
 	background-color:#222;
 	height:60px;
 	color:#fff;
-}
+    box-shadow: 5px 5px;
 
 .nav-main .logo {
 	float:left;
@@ -40,8 +41,12 @@ body, html {
     line-height:40px;
     color:#fff;
     text-decoration:none;
-
-
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    transition: 0.2s linear;
+    background-color:#444;
+    color:#000;
+}
 
 }
 
@@ -50,6 +55,7 @@ body, html {
     -moz-transition: 0.2s linear;
     transition: 0.2s linear;
     background-color:#444;
+    color:#000;
 }
 
 .nav-content {
