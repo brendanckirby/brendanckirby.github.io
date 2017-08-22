@@ -4,11 +4,14 @@ body, html {
     
 }
 
+/*Header*/
+
 .content {
 	padding:100px;
 }
 
 .nav-main {
+    padding:0px 100px;
 	width:100%;
 	background-color:#222;
 	height:60px;
@@ -16,11 +19,14 @@ body, html {
 }    
 
 .nav-main .logo {
-	float:left;
-	height:40px;
-	padding:10px 100px;
-	font-size:1.4em;
-	line-height:40px;
+    float:left;
+    display:inline-block;
+    height:40px;
+    padding:10px 20px;
+    line-height:40px;
+    color:#fff;
+    text-decoration: bold;
+
 }
 
 .nav-main .logo:hover {
@@ -54,7 +60,6 @@ body, html {
     transition: 0.2s linear;
     background-color:#444;
     color:#fff;
-    text-transform: bold;
 }
 
 .nav-content {
