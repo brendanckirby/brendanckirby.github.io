@@ -1,20 +1,42 @@
 body, html {
 	margin:0;
 	font:1em "Open Sans", sans-serif;
-    
+/*background*/
+
+    animation: bgc 50s infinite;
+    -webkit-animation: bgc 50s infinite;
+    -moz-animation: bgc 50s infinite;
 }
+
+@keyframes bgc{
+    0% {background:#ccffff}
+    20% {background:#ccffcc}
+    40% {background:#ffffcc}
+    60% {background:#ffcccc}
+    80% {background:#ccccff}
+    100% {background:#ccffff}
+}
+
+@-webkit-keyframes bgc{
+    0% {background:#ccffff}
+    20% {background:#ccffcc}
+    40% {background:#ffffcc}
+    60% {background:#ffcccc}
+    80% {background:#ccccff}
+    100% {background:#ccffff}
+}
+
+@-moz-keyframes bgc{
+    0% {background:#ccffff}
+    20% {background:#ccffcc}
+    40% {background:#ffffcc}
+    60% {background:#ffcccc}
+    80% {background:#ccccff}
+    100% {background:#ccffff} 
+}
+
 
 /*Header*/
-
-.content {
-    float:left;
-	padding:25px;
-    margin:100px;
-    border: solid 5px;
-    background-color: #fff;
-
-
-}
 
 .nav-main {
     padding:0px 100px;
@@ -22,6 +44,7 @@ body, html {
 	background-color:#222;
 	height:60px;
 	color:#fff;
+    opacity: .9;
 }    
 
 .nav-main .logo {
@@ -30,13 +53,16 @@ body, html {
     height:40px;
     padding:10px 20px;
     line-height:40px;
-    color:#fff;
-    text-decoration: bold;
+    color: #fff;
+    text-decoration: none;
 
 }
 
 .nav-main .logo:hover {
-    opacity: .75;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    transition: 0.2s linear;
+    color:#d3d3d3
 }
 
 .nav-main > ul {
@@ -67,6 +93,19 @@ body, html {
     background-color:#444;
     color:#fff;
 }
+
+.nav-item:focus {
+    background-color: #444;
+}
+
+.nav-item:focus ~ .nav-content {
+    max-height: 400px;
+    -webkit-transition:max-height 0.3s ease-in;
+    -moz-transition:max-height 0.3s ease-in;
+    transition:max-height 0.3s ease-in;
+}
+
+/*dropdown*/
 
 .nav-content {
     max-height: 0;
@@ -101,14 +140,15 @@ body, html {
     padding: 5px 0;
 }
 
-.nav-item:focus {
-    background-color: #444;
-}
+/*content*/
 
-.nav-item:focus ~ .nav-content {
-    max-height: 400px;
-    -webkit-transition:max-height 0.3s ease-in;
-    -moz-transition:max-height 0.3s ease-in;
-    transition:max-height 0.3s ease-in;
+.content {
+    position: absolute;
+    padding:25px;
+    margin:60px 100px;
+    border: solid #000 5px;
+    background-color: #fff;
+    color: #000;
+
 }
 
