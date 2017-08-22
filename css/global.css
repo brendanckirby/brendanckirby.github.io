@@ -7,7 +7,13 @@ body, html {
 /*Header*/
 
 .content {
-	padding:100px;
+    float:left;
+	padding:25px;
+    margin:100px;
+    border: solid 5px;
+    background-color: #fff;
+
+
 }
 
 .nav-main {
