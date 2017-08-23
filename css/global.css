@@ -88,6 +88,9 @@ body, html {
     line-height:40px;
     color:#d3d3d3;
     text-decoration:none;
+    -webkit-transition: 0.2s linear;
+    -moz-transition: 0.2s linear;
+    transition: 0.2s linear;
     
 }
 
